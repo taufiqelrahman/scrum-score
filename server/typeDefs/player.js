@@ -4,6 +4,7 @@ const PlayerTypeDefs = gql => gql`
     name: String!
     gameId: String!
     score: Int
+    online: Boolean
   }
 `;
 

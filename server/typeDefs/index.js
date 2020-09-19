@@ -36,6 +36,16 @@ const TypeDefs = gql => gql`
       id: String!
       score: Int!
     ): Player
+
+    setOnline(
+      id: String!
+      online: Boolean!
+    ): Player
+  }
+
+  type Subscription {
+    scoreChanged: Player
+    onlineChanged: Player
   }
 `;
 

@@ -9,6 +9,17 @@ const server = new ApolloServer({
   typeDefs,
   resolvers,
   context: () => ({ db }),
+  subscriptions: {
+    onConnect: (connectionParams, webSocket, context) => {
+      console.log('client connected');
+    },
+    onDisconnect: (webSocket, context) => {
+      console.log('client disconnected');
+    },
+  },
 })
 
-server.listen().then(({ url }) => console.log(`Server ready at ${url}`));
+server.listen().then(({ url, subscriptionsUrl }) => {
+  console.log(`🚀 Server ready at ${url}`);
+  console.log(`🚀 Subscriptions ready at ${subscriptionsUrl}`);
+});

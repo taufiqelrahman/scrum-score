@@ -1,0 +1,7 @@
+const SCORE_CHANGED = 'SCORE_CHANGED';
+const ONLINE_CHANGED = 'ONLINE_CHANGED';
+
+module.exports = {
+  SCORE_CHANGED,
+  ONLINE_CHANGED,
+};

@@ -10,4 +10,7 @@ module.exports = {
     ...GameResolver.Mutation,
     ...PlayerResolver.Mutation,
   },
+  Subscription: {
+    ...PlayerResolver.Subscription,
+  },
 };
