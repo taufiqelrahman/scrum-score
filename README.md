@@ -37,7 +37,7 @@ server/
 
 ### Prerequisites
 
-- Node.js (v14+ recommended)
+- Node.js (v22+ recommended)
 - npm
 
 ### Installation
